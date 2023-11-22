@@ -4,7 +4,7 @@
 
         $username = $_SESSION['username'];
         $Id = $_SESSION['Id'];
-        $length = strlen($username);
+        $length = strlen($user_bio);
         if($length < 10){ 
             header("Location: ./profile.php");
             LOG_ALERT("Character must be between 10-50")
